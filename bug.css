@@ -1,0 +1,1 @@
+The CSS property `calc()` is used incorrectly.  For example, using `width: calc(100% - 10px);` inside a flexbox item might not work as expected because the 100% refers to the *available* space within the flex container, not the total width of the parent element.  If the flex container has padding or margins, the calculation will be incorrect.

@@ -1,0 +1,23 @@
+/* bugSolution.css */
+.container {
+  display: flex;
+  width: 300px; /* Example width */
+  padding: 10px; /* Example padding */
+  border: 1px solid black;
+}
+
+.item {
+  flex: 1;
+  /* Corrected calculation that accounts for padding */
+  width: calc(100% - 20px); /* Subtract double the padding */
+  background-color: lightblue;
+  margin: 5px;
+}
+
+/*Alternative solution to consider using min-width*/
+.item2 {
+  flex: 1;
+  min-width:calc(100% - 20px);
+  background-color: lightgreen;
+  margin: 5px;
+} 
